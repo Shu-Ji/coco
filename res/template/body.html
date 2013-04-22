@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{ require('body.css') }}
+</head>
+
+
+<body>
+<div id="content" data-uin="{{ uin }}">
+    ^ for h in history[::-1]:
+        ^ set content = json.loads(h.content)
+        ^ set msg = content['msg']
+        {#
+        ^ set font = content['font']
+        ^ set color = font['color']
+        ^ set b, i, u = font['style']
+        #}
+        ^ set cls = '' if h.friend_name else ' fr'
+        <div class="box{{ cls }}">
+            <img src="{{ avatar }}" alt="" />
+            <span class="triangle"></span>
+            <div class="msg">
+                <header>
+                    <span class="msg-dt">{{ h.dt }}</span>
+                </header>
+                ^ for m in msg:
+                    ^ set key = m.keys()[0]
+                    ^ set value = m[key]
+                    ^ if key == 'unicode':
+                        {{ value.replace('\n', '<br>') }}
+                    ^ elif key == 'face':
+                        <img src="{{ require('faces/' ~ value ~ '.gif') }}">
+                    ^ elif key == 'offpic':
+                        <img src="{{ offpic_data(value) }}">
+                    ^ endif
+                ^ endfor
+            </div>
+        </div>
+    ^ endfor
+</div>
+
+{# 好友的头像和我的头像 #}
+<img id="gotop"><img id="gotop_i">
+{{ require('jquery.js') }}
+{{ require('body.js') }}
+</body>
+</html>

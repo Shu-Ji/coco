@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{ require('body.css') }}
+<style>
+    html, body, #editor {
+        height: 91%;
+    }
+    #editor {
+        outline: none;
+        border: none;
+    }
+</style>
+</head>
+
+
+<body>
+<div id="editor" contenteditable="true"></div>
+{{ require('jquery.js') }}
+{{ require('editor.js') }}
+</body>
+</html>

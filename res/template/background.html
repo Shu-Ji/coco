@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+
+<body>
+<audio id="msg-snd" preload="auto">
+    <source src="{{ require('msg.ogg') }}" type="audio/mpeg">
+</audio>
+
+<audio id="global-snd" preload="auto">
+    <source src="{{ require('global.ogg') }}" type="audio/mpeg">
+</audio>
+
+<audio id="shake-snd" preload="auto">
+    <source src="{{ require('shake.ogg') }}" type="audio/mpeg">
+</audio>
+
+{{ require('jquery.js') }}
+{{ require('background.js') }}
+</body>
+</html>

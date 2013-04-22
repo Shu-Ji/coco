@@ -1,0 +1,43 @@
+{
+    "retcode":0,
+    "result":{
+        "friends":[
+            {"flag":16,"uin":645026482,"categories":4},
+            {"flag":20,"uin":549296559,"categories":5},
+            {"flag":20,"uin":881637194,"categories":5},
+            {"flag":0,"uin":1474168187,"categories":0},
+            {"flag":16,"uin":271196002,"categories":4},
+            {"flag":0,"uin":3670834692,"categories":0},
+            {"flag":16,"uin":3553947883,"categories":4},
+            {"flag":16,"uin":749848203,"categories":4},
+            {"flag":0,"uin":3490822279,"categories":0},
+            {"flag":16,"uin":1566802369,"categories":4},
+            {"flag":0,"uin":286185619,"categories":0},
+            {"flag":4,"uin":883671724,"categories":1}],
+        "marknames":[
+            {"uin":645026482,"markname":"阿伟","type":0},
+            {"uin":1474168187,"markname":"13016968281 刘安徽","type":0},
+            {"uin":271196002,"markname":"自己","type":0},
+            {"uin":3553947883,"markname":"振伟","type":0},
+            {"uin":749848203,"markname":"振伟","type":0},
+            {"uin":883671724,"markname":"徐盛庆","type":0}],
+        "categories":[
+            {"index":0,"sort":0,"name":"我的好友"},
+            {"index":1,"sort":1,"name":"好吧好吧"},
+            {"index":5,"sort":5,"name":"机器人测试"}],
+        "vipinfo":[{"vip_level":0,"u":1474168187,"is_vip":0}],
+        "info":[
+            {"face":522,"flag":579,"nick":"【腾讯小组】","uin":645026482},
+            {"face":522,"flag":289931776,"nick":"书记的马甲","uin":549296559},
+            {"face":528,"flag":25165824,"nick":"FCG Team","uin":881637194},
+            {"face":723,"flag":8389216,"nick":"我心飞翔","uin":1474168187},
+            {"face":603,"flag":513,"nick":"【官方送礼】","uin":271196002},
+            {"face":525,"flag":8389120,"nick":"黑色的云","uin":3670834692},
+            {"face":603,"flag":8913409,"nick":"∝爱 官方送礼","uin":3553947883},
+            {"face":3,"flag":512,"nick":"冷小霖","uin":749848203},
+            {"face":537,"flag":8389120,"nick":"闪闪的星星","uin":3490822279},
+            {"face":0,"flag":0,"nick":"荒村","uin":1566802369},
+            {"face":720,"flag":8389120,"nick":"一切随缘","uin":286185619},
+            {"face":567,"flag":8388608,"nick":"绛洞花主","uin":883671724}]
+    }
+}

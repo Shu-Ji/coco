@@ -1,0 +1,253 @@
+#root_widget {
+    background-color: transparent;
+}
+
+#main_widget {
+    border: 2px solid gray;
+    border-radius: 3px;
+}
+
+#main_panel * {
+    color: #ccc;
+}
+
+#main_line {
+    background: rgba(255, 255, 255, 196);
+}
+
+#login_vcimg {
+    color: transparent;
+}
+
+/* 标题栏按钮 */
+QToolButton {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+#close_btn_login,
+#close_btn {
+    background-image: url(:/img/close.png);
+}
+#close_btn_login:hover,
+#close_btn:hover {
+    background-image: url(:/img/close_hover.png);
+}
+#close_btn_login:pressed,
+#close_btn:pressed {
+    background-image: url(:/img/close_pressed.png);
+}
+
+#max_btn {
+    background-image: url(:/img/max.png);
+}
+#max_btn:hover {
+    background-image: url(:/img/max_hover.png);
+}
+#max_btn:pressed {
+    background-image: url(:/img/max_pressed.png);
+}
+
+#min_btn {
+    background-image: url(:/img/min.png);
+}
+#min_btn:hover {
+    background-image: url(:/img/min_hover.png);
+}
+#min_btn:pressed {
+    background-image: url(:/img/min_pressed.png);
+}
+
+/* 输入框 */
+QLineEdit {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    background: transparent;
+    color: purple;
+    selection-background-color: purple;
+    qproperty-alignment: AlignCenter;
+}
+
+
+/* 登录面板 */
+#login_panel {
+    background-image: url(:/img/login-panel.png);
+    height: 700px;
+    width: 300px;
+}
+
+#avatar {
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+/* 登录面板中的头像[控件已经删除了，是QTollBar控件, 位置 x:100, y:250, h: 26, w:30] */
+#login_avatar {
+    background-image: url(:/img/avatar.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: transparent;
+    min-width: 96px;
+    min-height: 96px;
+}
+
+#auto_login,
+#login_invisable,
+#remember_pwd {
+    background-image: url(:/img/switch-off.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: transparent;
+    min-width: 66px;
+    min-height: 22px;
+}
+
+#login_invisable:checked,
+#remember_pwd:checked,
+#auto_login:checked {
+    background-image: url(:/img/switch-on.png);
+}
+
+#search_input {
+    border: none;
+}
+
+/* 主面板tab */
+QTabWidget {
+    background: #323841;
+}
+QTabBar::tab {
+    width: 98px;
+    color: #333;
+    background: #ccc;
+} 
+QTabBar::tab:selected {
+    color: #ccc;
+    background: #323841;
+}
+QTabWidget::pane {
+    width: 300px;
+    border-top: none;
+}
+
+QTabWidget::pane * {
+    background: #323841;
+}
+
+QTreeWidget {
+    border: none;
+    color: #ccc;
+    background: #323841;
+    alternate-background-color: rgba(20, 26, 29, 30);
+}
+
+QTreeWidget::branch:hover,
+QTreeWidget::branch:selected,
+QTreeWidget::branch:has-children,
+QTreeWidget::item:hover,
+QTreeWidget::item:selected,
+QTreeWidget::item:has-children:hover {
+    background: #ccc;
+    color: #323841;
+}
+QTreeWidget::item:has-children:open {
+    border: 1px solid #ccc;
+}
+
+QListWidget {
+    border: none;
+}
+
+#toggle_btn {
+    background-image: url(:/img/arrow-right.png);
+}
+#toggle_btn:checked {
+    background-image: url(:/img/arrow-left.png);
+}
+
+/* 群组 */
+QTreeWidget::item:has-children {
+    background: transparent;
+    color: #ccc;
+}
+
+/* 好友 */
+QTreeWidget::item:!has-children {
+}
+
+/* 分隔条 */
+QSplitter::handle {
+}
+
+QSplitter::handle:horizontal {
+    width: 0;
+    border-left: 1px solid gray;
+}
+
+QSplitter::handle:vertical {
+    height: 0;
+    border-top: 1px solid gray;
+}
+
+/* 主面板 */
+#main_panel {
+    min-width: 300px;
+    background: #323841;
+}
+
+/* 内容显示区域 */
+#body {
+    min-height: 200px;
+}
+
+/* 发送窗口 */
+#footer {
+    min-height: 100px;
+}
+
+QWebView {
+    selection-background-color: #323841;
+    selection-color: #fff;
+}
+
+/* 对话框上好友名字和个性签名 */
+#flnick_label,
+#friend_name_label {
+    color: #323841;
+    border: none;
+    qproperty-alignment: AlignCenter;
+    selection-background-color: #4d90fe;
+}
+
+/* 对话框标题栏背景 */
+#dlg_header_widget {
+    background: #323841;
+}
+#dlg_header_widget * {
+    color: #ccc;
+}
+
+
+/* 滚动条 */
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+}
+QScrollBar::handle:vertical {
+    min-height: 20px;
+    background: #ccc;
+    border-radius: 5px;
+}
+QScrollBar::up-arrow:vertical,
+QScrollBar::down-arrow:vertical,
+QScrollBar::sub-line:vertical,
+QScrollBar::add-line:vertical {
+    height: 0;
+    width: 0;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}

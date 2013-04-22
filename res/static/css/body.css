@@ -1,0 +1,121 @@
+body {
+    overflow-x: hidden;
+    background: #eee;
+    line-height: 1.5em;
+    word-break: break-all;
+}
+
+html * {
+    font-family: "wqy", "msyh", arial, sans-serif, serif;
+}
+
+.msg-dt {
+    opacity: .5;
+}
+
+#gotop_i,
+#gotop {
+    display: none;
+    position: fixed;
+    left: 10px;
+    bottom: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 18px;
+}
+
+#gotop_i {
+    left: auto;
+    right: 10px;
+    bottom: 50%;
+}
+
+img {
+    max-height: 300px;
+    max-width: 600px;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.box:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.triangle {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 52px;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    border-bottom: 8px solid #eee;
+    border-top: 8px solid #eee;
+    border-left: none;
+    border-right: 8px solid #3079ED;
+}
+
+.box .msg {
+    margin: 5px;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #3079ED;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(top, #4D90FE, #4787ED);
+}
+
+.fr {
+    padding-left: 0;
+    padding-right: 50px;
+}
+
+.fr .triangle {
+    left: auto;
+    right: 47px;
+    border-bottom: 8px solid #eee;
+    border-top: 8px solid #eee;
+    border-right: none;
+    border-left: 8px solid #3079ED;
+}
+
+.fr .msg {
+    float: right;
+}
+
+/* 滚动条 */
+@media only screen and (-webkit-min-device-pixel-ratio: 0) and (min-device-width: 1025px) {
+    ::-webkit-scrollbar {
+        width: 9px;
+        height: 9px;
+    }
+
+    ::-webkit-scrollbar-button:start:decrement,
+    ::-webkit-scrollbar-button:end:increment {
+        height: 0;
+    }
+
+    ::-webkit-scrollbar-button:vertical:increment {
+        background-color: #ccc;
+    }
+
+    ::-webkit-scrollbar-track-piece {
+        background-color: #eee;
+    }
+
+    ::-webkit-scrollbar-thumb:horizontal,
+    ::-webkit-scrollbar-thumb:vertical {
+        height: 50px;
+        background-color: #323841;
+    }
+}
