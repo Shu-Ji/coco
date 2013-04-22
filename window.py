@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'res/window.ui'
 #
-# Created: Mon Apr 22 18:35:17 2013
+# Created: Mon Apr 22 19:19:03 2013
 #      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -272,9 +272,9 @@ class Ui_main_window(object):
     def retranslateUi(self, main_window):
         main_window.setWindowTitle(QtGui.QApplication.translate("main_window", "COCO QQ", None, QtGui.QApplication.UnicodeUTF8))
         self.login_btn.setText(QtGui.QApplication.translate("main_window", "登录", None, QtGui.QApplication.UnicodeUTF8))
-        self.login_input_qq.setText(QtGui.QApplication.translate("main_window", "841069962", None, QtGui.QApplication.UnicodeUTF8))
+        self.login_input_qq.setText(QtGui.QApplication.translate("main_window", "1234567", None, QtGui.QApplication.UnicodeUTF8))
         self.login_input_qq.setPlaceholderText(QtGui.QApplication.translate("main_window", "账号", None, QtGui.QApplication.UnicodeUTF8))
-        self.login_input_pwd.setText(QtGui.QApplication.translate("main_window", "911198809", None, QtGui.QApplication.UnicodeUTF8))
+        self.login_input_pwd.setText(QtGui.QApplication.translate("main_window", "1234567", None, QtGui.QApplication.UnicodeUTF8))
         self.login_input_pwd.setPlaceholderText(QtGui.QApplication.translate("main_window", "密码", None, QtGui.QApplication.UnicodeUTF8))
         self.label_2.setText(QtGui.QApplication.translate("main_window", "自动登录", None, QtGui.QApplication.UnicodeUTF8))
         self.label.setText(QtGui.QApplication.translate("main_window", "记住密码", None, QtGui.QApplication.UnicodeUTF8))
