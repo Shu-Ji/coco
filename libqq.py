@@ -325,13 +325,12 @@ class Coco(object):
         '''发送消息'''
         if isinstance(msg, unicode):
             msg = msg.encode('u8')
-        if font is None:
-            font = {
-                'name': '宋体',
-                'size': '16',
-                'style': [0, 0, 0],
-                'color': '000000'
-            }
+        font = font or {
+            'name': '宋体',
+            'size': '12',
+            'style': [0, 0, 0],
+            'color': '000000'
+        }
         name = font['name']
         if isinstance(name, unicode):
             font['name'] = name.encode('u8')
@@ -383,8 +382,7 @@ class Coco(object):
 
     def get_profile(self, uin=None):
         # 我的个人资料
-        if uin is None:
-            uin = self.qq
+        uin = uin or self.qq
         logging.debug('getting my profile...')
         url = 'http://s.web2.qq.com/api/get_friend_info2?tuin=%s&verifysession=&code=&vfwebqq=%s&t=%s'
         url %= uin, self.vfwebqq, t()

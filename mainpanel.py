@@ -439,7 +439,6 @@ class MainHandler:
         else:
             history = []
 
-        # 是否是我的消息，如果不是，那么播放声音
         this.web_view.setHtml(render('body.html', uin=uin, history=history))
         this.input_div.setHtml(render('editor.html'))
 
