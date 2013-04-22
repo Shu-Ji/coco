@@ -1,6 +1,8 @@
 coco
 ====
 
+**如果你在下面的哪个文件中发现了QQ号码和密码，可能是由于我的疏忽将其提交上来了，希望好心人提醒一下，感激不尽。**
+
 ![](https://github.com/Shu-Ji/coco/raw/master/doc/ss.png)
 
 开发环境:
