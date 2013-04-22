@@ -7,13 +7,12 @@ coco
 
 开发环境:
 
-    * Linux pc 3.5.0-27-generic #46~precise1-Ubuntu SMP Tue Mar 26 19:33:56 UTC 2013 i686 i686 i386 GNU/Linux 
-    * Python 2.7.3
-    * Qt 5.0.1
-    * Qt Designer 4.8.1
-    * PyQy-x11-gpl-4.10.1
-    * sqlalchemy 0.8
-    * jinja2 2.6
+    *. Linux pc 3.5.0-27-generic #46~precise1-Ubuntu SMP Tue Mar 26 19:33:56 UTC 2013 i686 i686 i386 GNU/Linux 
+    *. Python 2.7.3
+    *. PyQt-x11-gpl-4.10.1 [基于Qt 5.0.1编译]
+    *. sqlalchemy v0.8
+    *. jinja2 v2.6
+    *. 工具Qt Designer 4.8.1
 
 使用需自行搭建环境，代码只要程序根目录下的所有py文件，data目录，其他文件均可删
 除.
@@ -30,7 +29,7 @@ coco
     ├── doc  # 文档
     │   └── ss.png
     ├── gen.py  # 将Qt Designer产生的ui文件和qrc文件转换成python代码
-    ├── libqq.py  # webqq协议的python实现版本[可单独作为其他程序引用]
+    ├── libqq.py  # webqq协议的python实现版本[可单独作为其他程序引用，需要下面net.py的支持]
     ├── login.py  # 登录面板操作功能
     ├── magic.py  # 判断用户图片类型的库
     ├── mainpanel.py  # 所有聊天时的操作都在这里
@@ -74,3 +73,5 @@ coco
     ├── template.py  # 封装的一个jinja2模板操作接口
     ├── utils.py  # 一些通用工具
     └── window.py  # ui文件转换后的python代码
+
+Github地址: https://github.com/Shu-Ji/coco
