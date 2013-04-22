@@ -475,7 +475,7 @@ class Coco(object):
 
 def test():
     coco = Coco()
-    fail = coco.login('841069962', '911198809')
+    fail = coco.login('123456', '123456')
     if not fail['need_verify_code']:
         if fail['msg'] is not None:
             print fail
