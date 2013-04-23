@@ -22,7 +22,7 @@ coco
     *. PyQt-x11-gpl-4.10.1 [基于Qt 5.0.1编译]
     *. sqlalchemy v0.8
     *. jinja2 v2.6
-    *. 工具Qt Designer 4.8.1
+    *. Qt Designer 4.8.1
     *. pynotify
 
 
