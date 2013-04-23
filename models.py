@@ -7,13 +7,12 @@ import sqlalchemy.orm as orm
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, Binary
 
-
 import settings
 
 
 now = lambda: datetime.datetime.now().strftime('%Y-%m:%d %H:%M:%S')
 engine = sa.create_engine(
-    'sqlite:///%s/data/cocoqq.db' % settings.APP_ROOT,
+    'sqlite:///%s' % settings.DB_FILE_PATH,
     encoding='utf8',
     echo=False,
 )

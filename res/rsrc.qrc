@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="/">
+    <file alias="background.js">static/js/background.js</file>
     <file>img/face.gif</file>
     <file>img/faces/0.gif</file>
     <file>img/faces/1.gif</file>
@@ -145,6 +146,8 @@
     <file alias="body.js">static/js/body.js</file>
     <file alias="body.css">static/css/body.css</file>
     <file>template/body.html</file>
+    <file>template/editor.html</file>
+    <file>template/background.html</file>
     <file alias="jquery.js">static/js/jquery.js</file>
     <file>img/arrow-left.png</file>
     <file>img/arrow-right.png</file>

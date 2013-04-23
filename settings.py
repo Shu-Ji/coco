@@ -1,13 +1,13 @@
 #coding: u8
 
-import os
+
+import os.path as osp
 
 
-DEBUG = False
+DB_FILE_PATH = osp.join(osp.expanduser('~'), '.cocoqq.db')
+
 DEBUG = True
-
-
-APP_ROOT = os.path.dirname(__file__) or os.getcwd()
+DEBUG = False
 
 
 if DEBUG:

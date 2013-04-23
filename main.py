@@ -32,11 +32,6 @@ class MainWindow(QMainWindow, window.Ui_main_window):
 
         self.app = app
 
-        import os
-        if not os.path.exists('data/cocoqq.db'):
-            import models
-            models.init_db()
-
         self.init_ui()
 
         # 其他ui界面的初始化工作
@@ -58,8 +53,15 @@ class MainWindow(QMainWindow, window.Ui_main_window):
         # 心跳
         thread.start_new_thread(self.coco.get_msg_tip, ())
 
-        # 调试用
-        self.login_btn.click()
+        import os.path as osp
+        if not osp.exists(settings.DB_FILE_PATH):
+            import models
+            models.init_db()
+            # 调试用
+            self.login_btn.click()
+        else:
+            self.login_input_qq.setText('')
+            self.login_input_pwd.setText('')
 
     @pyqtSlot()
     def webkit_enter_key_pressed(self):
@@ -107,6 +109,8 @@ class MainWindow(QMainWindow, window.Ui_main_window):
         # 只显示登录窗口
         self.main_widget.hide()
         self.login_loading_area.hide()
+        if not settings.DEBUG:
+            self.background_view.hide()
 
         self.nick.setText('')
         self.center_splitter.setStretchFactor(0, 2)

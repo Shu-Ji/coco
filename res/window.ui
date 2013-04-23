@@ -80,7 +80,7 @@
             <set>Qt::ImhDigitsOnly</set>
            </property>
            <property name="text">
-            <string>1234567</string>
+            <string>1234</string>
            </property>
            <property name="maxLength">
             <number>10</number>
@@ -96,7 +96,7 @@
             <enum>Qt::NoContextMenu</enum>
            </property>
            <property name="text">
-            <string>1234567</string>
+            <string>1234</string>
            </property>
            <property name="maxLength">
             <number>20</number>
@@ -636,12 +636,6 @@
             </item>
             <item row="2" column="0">
              <widget class="QWebView" name="background_view">
-              <property name="maximumSize">
-               <size>
-                <width>0</width>
-                <height>0</height>
-               </size>
-              </property>
               <property name="url">
                <url>
                 <string>about:blank</string>
@@ -790,6 +784,38 @@
     <hint type="destinationlabel">
      <x>252</x>
      <y>621</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>min_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>main_window</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>365</x>
+     <y>25</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>392</x>
+     <y>0</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>max_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>main_window</receiver>
+   <slot>showMaximized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>414</x>
+     <y>28</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>538</x>
+     <y>2</y>
     </hint>
    </hints>
   </connection>

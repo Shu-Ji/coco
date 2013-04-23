@@ -21,11 +21,11 @@ render = template.Render(
 
 def require(path):
     '''由于qrc文件转换成了py文件，所以后面加载的文件(js/css)都是以前的'''
+    import os
+    import os.path as osp
+    ext = osp.splitext(path)[1][1:]
     if settings.DEBUG:
         # 从本地文件加载而不是从qrc中
-        import os
-        import os.path as osp
-        ext = osp.splitext(path)[1][1:]
         if ext == 'ogg':
             p = osp.join(os.getcwd(), 'res/snd/%s' % path)
             p = 'file://%s' % p
@@ -51,7 +51,14 @@ def require(path):
             path = 'qrc:///%s' % path
             return '<script src="%s"></script>' % path
         elif ext == 'ogg':
-            return 'qrc:///%s' % path
+            import base64
+            from PyQt4.QtCore import QFile
+            # qrc路径似乎不支持audio标签，所以把数据写成data uri
+            f = QFile(':/%s' % path)
+            f.open(QFile.ReadOnly)
+            binary = f.readAll()
+            f.close()
+            return 'data:audio/ogg;base64,%s' % base64.b64encode(binary)
         elif ext in ['gif', 'png']:
             return 'qrc:///img/%s' % path
 
@@ -332,6 +339,21 @@ class MainHandler:
         # 不能直接调用js的函数，因为poll是在多线程中
         this.emit(SIGNAL('play sound'), 'msg')
         self.show_main_panel(uin)
+
+        # 桌面通知
+        notify_msg = u''.join(map(lambda x: x.get('unicode', ''), msg))
+        self.notify(notify_msg, nick)
+
+    def notify(self, msg, title=u'COCO提示', type_='info'):
+        # 桌面通知
+        try:
+            import pynotify
+            pynotify.init('COCO QQ')
+            notification = pynotify.Notification(title, msg, type_)
+            notification.set_urgency(pynotify.URGENCY_NORMAL)
+            notification.show()
+        except Exception:
+            pass
 
     def save_history(self, from_, to, content, friend_name=None):
         db.add(models.FriendHistory(

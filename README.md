@@ -5,17 +5,25 @@ coco
 
 ![](https://github.com/Shu-Ji/coco/raw/master/doc/ss.png)
 
+
+独立二进制包[百度网盘下载](http://pan.baidu.com/share/link?shareid=526809&uk=3104301417#dir/path=%2Fcocoqq), 下载完成后执行:
+
+    $ chmod +x cocoqq.bin
+    $ ./cocoqq.bin
+
+即可启动程序。
+
+附：
+
 开发环境:
 
-    *. Linux pc 3.5.0-27-generic #46~precise1-Ubuntu SMP Tue Mar 26 19:33:56 UTC 2013 i686 i686 i386 GNU/Linux 
+    *. Ubuntu 12.04.2 
     *. Python 2.7.3
     *. PyQt-x11-gpl-4.10.1 [基于Qt 5.0.1编译]
     *. sqlalchemy v0.8
     *. jinja2 v2.6
     *. 工具Qt Designer 4.8.1
-
-使用需自行搭建环境，代码只要程序根目录下的所有py文件，data目录，其他文件均可删
-除.
+    *. pynotify
 
 
 目录结构说明:
@@ -24,8 +32,6 @@ coco
     │   ├── analyze.rst  # 分析说明
     │   ├── friends_list  # 好友列表返回数据
     │   └── online_list  # 在线列表数据
-    ├── data  用来存放用户数据的目录
-    │   └── cocoqq.db  数据库[历史记录等]
     ├── doc  # 文档
     │   └── ss.png
     ├── gen.py  # 将Qt Designer产生的ui文件和qrc文件转换成python代码
@@ -73,5 +79,7 @@ coco
     ├── template.py  # 封装的一个jinja2模板操作接口
     ├── utils.py  # 一些通用工具
     └── window.py  # ui文件转换后的python代码
+
+    另外存放历史记录和配置的文件放在你的家目录下面的.cocoqq.db中了[~/.cocoqq.db]
 
 Github地址: https://github.com/Shu-Ji/coco

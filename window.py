@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'res/window.ui'
 #
-# Created: Mon Apr 22 20:22:36 2013
+# Created: Tue Apr 23 12:23:01 2013
 #      by: PyQt4 UI code generator 4.9.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -233,7 +233,6 @@ class Ui_main_window(object):
         self.web_view.setObjectName(_fromUtf8("web_view"))
         self.gridLayout_4.addWidget(self.web_view, 1, 0, 1, 1)
         self.background_view = QtWebKit.QWebView(self.body)
-        self.background_view.setMaximumSize(QtCore.QSize(0, 0))
         self.background_view.setUrl(QtCore.QUrl(_fromUtf8("about:blank")))
         self.background_view.setObjectName(_fromUtf8("background_view"))
         self.gridLayout_4.addWidget(self.background_view, 2, 0, 1, 1)
@@ -265,6 +264,8 @@ class Ui_main_window(object):
         QtCore.QObject.connect(self.login_input_qq, QtCore.SIGNAL(_fromUtf8("returnPressed()")), self.login_btn.click)
         QtCore.QObject.connect(self.login_input_pwd, QtCore.SIGNAL(_fromUtf8("returnPressed()")), self.login_btn.click)
         QtCore.QObject.connect(self.login_input_vc, QtCore.SIGNAL(_fromUtf8("returnPressed()")), self.login_loading_login_btn.click)
+        QtCore.QObject.connect(self.min_btn, QtCore.SIGNAL(_fromUtf8("clicked()")), main_window.showMinimized)
+        QtCore.QObject.connect(self.max_btn, QtCore.SIGNAL(_fromUtf8("clicked()")), main_window.showMaximized)
         QtCore.QMetaObject.connectSlotsByName(main_window)
         main_window.setTabOrder(self.login_input_qq, self.login_input_pwd)
         main_window.setTabOrder(self.login_input_pwd, self.login_btn)
@@ -272,9 +273,9 @@ class Ui_main_window(object):
     def retranslateUi(self, main_window):
         main_window.setWindowTitle(QtGui.QApplication.translate("main_window", "COCO QQ", None, QtGui.QApplication.UnicodeUTF8))
         self.login_btn.setText(QtGui.QApplication.translate("main_window", "登录", None, QtGui.QApplication.UnicodeUTF8))
-        self.login_input_qq.setText(QtGui.QApplication.translate("main_window", "1234567", None, QtGui.QApplication.UnicodeUTF8))
+        self.login_input_qq.setText(QtGui.QApplication.translate("main_window", "1234", None, QtGui.QApplication.UnicodeUTF8))
         self.login_input_qq.setPlaceholderText(QtGui.QApplication.translate("main_window", "账号", None, QtGui.QApplication.UnicodeUTF8))
-        self.login_input_pwd.setText(QtGui.QApplication.translate("main_window", "1234567", None, QtGui.QApplication.UnicodeUTF8))
+        self.login_input_pwd.setText(QtGui.QApplication.translate("main_window", "1234", None, QtGui.QApplication.UnicodeUTF8))
         self.login_input_pwd.setPlaceholderText(QtGui.QApplication.translate("main_window", "密码", None, QtGui.QApplication.UnicodeUTF8))
         self.label_2.setText(QtGui.QApplication.translate("main_window", "自动登录", None, QtGui.QApplication.UnicodeUTF8))
         self.label.setText(QtGui.QApplication.translate("main_window", "记住密码", None, QtGui.QApplication.UnicodeUTF8))
