@@ -81,5 +81,9 @@ coco
     └── window.py  # ui文件转换后的python代码
 
     另外存放历史记录和配置的文件放在你的家目录下面的.cocoqq.db中了[~/.cocoqq.db]
+    
+QQ机器人的实现：
+
+在mainpanel.py的def new_friend_msg(self, msg)方法的结尾处对msg进行处理即可，然后返回你要自动回复的内容并调用self.send_friend_msg(uin, u'这是处理后你自动回复的内容')就可以了，稍后奉上Demo。
 
 Github地址: https://github.com/Shu-Ji/coco
