@@ -6,7 +6,7 @@ coco
 ![](https://github.com/Shu-Ji/coco/raw/master/doc/ss.png)
 
 
-独立二进制包[百度网盘下载](http://pan.baidu.com/share/link?shareid=526809&uk=3104301417#dir/path=%2Fcocoqq), 下载完成后执行:
+独立二进制包[百度网盘下载](http://pan.baidu.com/share/link?shareid=585852&uk=3104301417), 下载完成后执行:
 
     $ chmod +x cocoqq.bin
     $ ./cocoqq.bin
