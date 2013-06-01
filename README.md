@@ -86,6 +86,6 @@ QQ机器人的实现：
 
 在mainpanel.py的def new_friend_msg(self, msg)方法的结尾处对msg进行处理即可，然后返回你要自动回复的内容并调用self.send_friend_msg(uin, u'这是处理后你自动回复的内容')就可以了，稍后奉上Demo。
 
-或者前往https://github.com/Shu-Ji/qqrobot有一个可运行的聊天机器人。
+或者前往 https://github.com/Shu-Ji/qqrobot 有一个可运行的聊天机器人。
 
 Github地址: https://github.com/Shu-Ji/coco
