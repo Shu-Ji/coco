@@ -16,11 +16,11 @@
             {"flag":4,"uin":883671724,"categories":1}],
         "marknames":[
             {"uin":645026482,"markname":"阿伟","type":0},
-            {"uin":1474168187,"markname":"13016968281 刘安徽","type":0},
-            {"uin":271196002,"markname":"自己","type":0},
-            {"uin":3553947883,"markname":"振伟","type":0},
-            {"uin":749848203,"markname":"振伟","type":0},
-            {"uin":883671724,"markname":"徐盛庆","type":0}],
+            {"uin":1474168187,"markname":"刘","type":0},
+            {"uin":271196002,"markname":"","type":0},
+            {"uin":3553947883,"markname":"伟","type":0},
+            {"uin":749848203,"markname":"9","type":0},
+            {"uin":883671724,"markname":"徐庆","type":0}],
         "categories":[
             {"index":0,"sort":0,"name":"我的好友"},
             {"index":1,"sort":1,"name":"好吧好吧"},
@@ -28,7 +28,7 @@
         "vipinfo":[{"vip_level":0,"u":1474168187,"is_vip":0}],
         "info":[
             {"face":522,"flag":579,"nick":"【腾讯小组】","uin":645026482},
-            {"face":522,"flag":289931776,"nick":"书记的马甲","uin":549296559},
+            {"face":522,"flag":289931776,"nick":"甲","uin":549296559},
             {"face":528,"flag":25165824,"nick":"FCG Team","uin":881637194},
             {"face":723,"flag":8389216,"nick":"我心飞翔","uin":1474168187},
             {"face":603,"flag":513,"nick":"【官方送礼】","uin":271196002},
